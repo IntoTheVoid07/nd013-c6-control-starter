@@ -12,17 +12,12 @@ public:
     /*
      * Constructor
      */
-    PID();
+    PID(double Kpi, double Kii, double Kdi, double output_lim_maxi, double output_lim_mini);
 
     /*
      * Destructor.
      */
     ~PID() = default;
-
-    /*
-     * Initialize PID.
-     */
-    void Init(double Kpi, double Kii, double Kdi, double output_lim_maxi, double output_lim_mini);
 
     /*
      * Update the PID error variables given cross track error.
@@ -37,7 +32,7 @@ public:
     /*
      * Update the delta time.
      */
-    double UpdateDeltaTime(double new_delta_time);
+    void UpdateDeltaTime(double new_delta_time);
 
     /*
      * Clamps the value between a minimum and maximum value.
@@ -75,5 +70,3 @@ private:
 };
 
 #endif //PID_CONTROLLER_H
-
-
