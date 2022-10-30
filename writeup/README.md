@@ -24,7 +24,7 @@ Also worth noting is that I had a hard time adjusting the parameters to get a go
 
 ## What is the effect of the PID according to the plots, how each part of the PID affects the control command?
 
-The proportional term greatly effects the variablitly of the error. If the P term is too high, the vehicle becomes unstable; however, if it's too low, it's less responsive. Therefore, it has the greatest impact on fine tuning the vehicle's control.
+The proportional term greatly effects the variability of the error. If the P term is too high, the vehicle becomes unstable; however, if it's too low, it's less responsive. Therefore, it has the greatest impact on fine tuning the vehicle's control.
 
 The integral term keeps track of the history of the error which makes the response stronger. In general, I found keeping it smaller worked best.
 
@@ -45,7 +45,7 @@ Cons:
 
 ## How would you design a way to automatically tune the PID parameters?
 
-I would implement an algorithm like the Twiddle algorithm to get a more well tuned parameters for the PID controller. After messing with those values a long time, it's pretty clear from the jerky and unstable steering, that having optimial PID parameters is essential.
+I would implement an algorithm like the Twiddle algorithm to get a more well tuned parameters for the PID controller. After messing with those values for a long time, it's pretty clear from the jerky and unstable steering, that having optimial PID parameters is essential.
 
 ## What would you do to improve the PID controller?
 
