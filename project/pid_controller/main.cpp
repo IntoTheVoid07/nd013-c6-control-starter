@@ -307,6 +307,7 @@ int main ()
           // - If needed, the position of the car is stored in the variables **x_position**, **y_position** and **z_position**
 
           // Find the closest point on the path
+          // Ref: https://knowledge.udacity.com/questions/908871
           double dis_min = 10000.0;
           int closest_pos = 0;
           double act_dis = 0.0;
